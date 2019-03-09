@@ -56,6 +56,8 @@
 |48| [What are the utility functions provided by RxJS?](#what-are-the-utility-functions-provided-by-rxjs)|
 |49| [What are observable creation functions?](#what-are-observable-creation-functions)|
 |50| [What will happen if you do not supply handler for observer?](#what-will-happen-if-you-do-not-supply-handler-for-observer)|
+|51| [What are angular elements?](#what-are-angular-elements)|
+|52| [What is the browser support of Angular Elements?](#what-is-the-browser-support-of-angular-elements)|
 
 1. ### What is Angular Framework?
 
@@ -809,3 +811,15 @@
     ```
 50. ### What will happen if you do not supply handler for observer?
     Normally an observer object can define any combination of next, error and complete notification type handlers. If you don't supply a handler for a notification type, the observer just ignores notifications of that type.
+51. ### What are angular elements?
+    Angular elements are Angular components packaged as **custom elements**(a web standard for defining new HTML elements in a framework-agnostic way). Angular Elements hosts an Angular component, providing a bridge between the data and logic defined in the component and standard DOM APIs, thus, providing a way to use Angular components in `non-Angular environments`.
+52. ### What is the browser support of Angular Elements?
+    Since Angular elements are packaged as custom elements the browser support of angular elements is same as custom elements support. This feature is is currently supported natively in a number of browsers and pending for other browsers.
+
+    | Browser | Angular Element Support |
+    |---- | --------- |
+    | Chrome | Natively supported|
+    | Opera | Natively supported |
+    | Safari| Natively supported |
+    | Firefox | Natively supported from 63 version onwards. You need to enable dom.webcomponents.enabled and dom.webcomponents.customelements.enabled in older browsers |
+    | Edge| Currently it is in progress|
